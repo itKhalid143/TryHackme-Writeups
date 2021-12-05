@@ -7,15 +7,15 @@
 ## Task1
 After finding Santa's account, what is their position in the company?
 
-![****](/Task1/1.png)
+![****](/Advent%20of%20Cyber%203/Task1/1.png)
 
 - It looks we have a parameter! Yaay! that all we need for IDORs, we can try to mody this reference and see how the website going to behave!
 
-![****](/Task1/0.png)
+![****](/Advent%20of%20Cyber%203/Task1/0.png)
 
 - Oooops we entered an Invalid ID! Let try one more time gangs! Hmmm, maybe let start from ```1```?
 
-![****](/Task1/2.png)
+![****](/Advent%20of%20Cyber%203/Task1/2.png)
 
 - Yaaay!
 
@@ -26,10 +26,10 @@ After finding Santa's account, what is their position in the company?
 
 ## Task 4
 
-![****](/Task1/2.png)
+![****](/Advent%20of%20Cyber%203/Task1/2.png)
 
 - Let help Santa fix those things! Well done! Let click ```Revert``` on them all.
 
-![****](/Task1/4.png)
+![****](/Advent%20of%20Cyber%203/Task1/4.png)
 
 - Yaay! We did it!
