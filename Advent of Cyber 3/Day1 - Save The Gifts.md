@@ -9,7 +9,7 @@
 
 ![****](/Advent%20of%20Cyber%203/Screenshots/Task1/1.PNG)
 
-- It looks we have a parameter! Yaay! that all we need for IDORs, we can try to mody this reference and see how the website going to behave!
+- It looks we have a parameter! Yaay! that all we need for IDORs, we can try to modify this reference and see how the website going to behave!
 
 ![****](/Advent%20of%20Cyber%203/Screenshots/Task1/0.PNG)
 
