@@ -70,4 +70,4 @@ sudo /usr/bin/socat stdin exec:/bin/sh
 
 ![****](/Inclusion/Pictures/root2.PNG)
 
-#Thank you!
+# Thank you!
