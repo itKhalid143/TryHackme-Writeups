@@ -1,4 +1,4 @@
-## We're first downloading the worlist to our machine
+## We are downloading the Wordlist to our machine
 ```$cat /advent3/day4/wordlist ```
 
 ![cat](/Advent%20of%20Cyber%203/Screenshots/Task4/Wordlist.PNG)
