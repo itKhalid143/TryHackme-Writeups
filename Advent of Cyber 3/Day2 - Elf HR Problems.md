@@ -1,11 +1,11 @@
 # Cookies Manipulation
 
 What can we do except signing up! right! nothing! let sign up then!
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/signup.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task2/signup.PNG)
 
 Let check the console! and see what's going on!
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/cookies.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task2/cookies.PNG)
 
 
 ## Here's our cookie!
@@ -27,7 +27,7 @@ Let check the console! and see what's going on!
 7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d
 ```
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/in.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task2/in.PNG)
 
 - Out of sudden a page comes up in our browser!
 
