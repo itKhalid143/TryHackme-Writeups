@@ -35,13 +35,13 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ## Now let's try to check the hidden directory that we've found!
 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/login.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task3/login.PNG)
 
 ## Aw! as penetration testers! our first move is Guessing the credentials! from the default!
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/default.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task3/default.PNG)
 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task1/in.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task3/in.PNG)
 
 ## We're in!
