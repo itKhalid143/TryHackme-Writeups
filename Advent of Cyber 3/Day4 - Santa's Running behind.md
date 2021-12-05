@@ -22,7 +22,7 @@ snowball123
 Now we need the post request, how does it look! for that purpose we use burpsuite!
 - Here's our response!
 
-![burp](/Advent%20of%20Cyber%203/Screenshots/Task4/Task4burp.PNG)
+![burp](/Advent%20of%20Cyber%203/Screenshots/Task4/burp.PNG)
 ```
 POST / HTTP/1.1
 Host: 10.10.88.145
