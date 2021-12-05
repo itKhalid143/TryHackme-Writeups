@@ -1,11 +1,11 @@
 # IDOR Vulnerability
 
-[!If you want to check my notes about IDORs](https://github.com/itKhalid143/websec365/blob/main/Days/Day4-IDOR.md)
+[If you want to check my notes about IDORs](https://github.com/itKhalid143/websec365/blob/main/Days/Day4-IDOR.md)
 
 ***
 
 ## Task1
-After finding Santa's account, what is their position in the company?
+``After finding Santa's account, what is their position in the company?``
 
 ![****](/Advent%20of%20Cyber%203/Task1/1.PNG)
 
@@ -19,14 +19,17 @@ After finding Santa's account, what is their position in the company?
 
 - Yaaay!
 
+***
+
 ## Task 2 & Task 3 
 
 - It's your time to shine! I know you'll going to solve them! Genius!
 
+***
 
 ## Task 4
 
-![****](/Advent%20of%20Cyber%203/Task1/2.PNG)
+![****](/Advent%20of%20Cyber%203/Task1/3.PNG)
 
 - Let help Santa fix those things! Well done! Let click ```Revert``` on them all.
 
