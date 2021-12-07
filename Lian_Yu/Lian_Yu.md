@@ -195,13 +195,13 @@ wrote extracted data to "ss.zip".
 
 - We did it!
 
-![****](/Lian_Yu/Screenshots/user.PNG)
+![****](/Lian_Yu/Screenshots/user.png)
 
 ## Time for some privesc!
 
 - as always! I am ```sudo -l``` fan! with some help of GTFOBins.
 
-![****](/Lian_Yu/Screenshots/root.PNG)
+![****](/Lian_Yu/Screenshots/root.png)
 
 # We did it Amazing Hackers!
 
