@@ -84,7 +84,7 @@ gobuster dir -u 10.10.204.227/island/2100 -w /usr/share/seclists/Discovery/Web-C
 /green_arrow.ticket   (Status: 200) [Size: 71]
 ```
 
-![****](/Lian_Yu/Screenshots/ticket)
+![****](/Lian_Yu/Screenshots/ticket.PNG)
 ![****](/Lian_Yu/Screenshots/page3.PNG)
 
 ## It seems we got some Credentials here! Let try to open that FTP!
