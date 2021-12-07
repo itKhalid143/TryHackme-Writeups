@@ -171,7 +171,6 @@ xxd Leave_me_alone.png
 
 - This is weird!
 
-![****](/Lian_Yu/Screenshots/steg.PNG)
 
 - We know PNG file signature starts with ```89 50 4E 47 0D 0A 1A 0A``` thanks to filesignatures.net, now let edit!
 
