@@ -91,7 +91,7 @@ gobuster dir -u 10.10.204.227/island/2100 -w /usr/share/seclists/Discovery/Web-C
 
 - First I've tried to use the current Password! it didn't work! so I needed to check that hit! and Boom! it's ```Base58``` decoded.
 ```java
-vigilante:!#th3h00d
+vigilante:!#th*****
 ```
 
 ### FTP 
