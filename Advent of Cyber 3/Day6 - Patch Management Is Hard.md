@@ -1,4 +1,4 @@
-# IDOR Vulnerability
+# LFI Vulnerability
 
 [If you want to check my notes about LFI/RFI](https://github.com/itKhalid143/websec100/blob/main/Days/Day8-LFI%20%26%26%20RFI.md)
 [LFI to RCE](https://github.com/itKhalid143/websec100/blob/main/Days/Day16-LFI-to-RCE.md)
