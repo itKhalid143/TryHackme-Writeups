@@ -58,8 +58,8 @@ gobuster dir -u 10.10.166.125 -w /usr/share/seclists/Discovery/Web-Content/direc
 /island               (Status: 301) [Size: 236] [--> http://10.10.166.125/island/]
 ```
 
-![****](/Screenshots/island.PNG)
-![****](/Screenshots/page1.PNG)
+![****](/Lian_Yu/Screenshots/island.PNG)
+![****](/Lian_Yu/Screenshots/page1.PNG)
 
 - They told us, we need to look for a directory, that has numbers! it's 4 digits numbers! so I did this!
 
@@ -72,8 +72,8 @@ gobuster dir -u 10.10.166.125/island -w /usr/share/seclists/Fuzzing/4-digits-000
 /2100                 (Status: 301) [Size: 241] [--> http://10.10.166.125/island/2100/]
 ```
 
-![****](/Screenshots/2100.PNG)
-![****](/Screenshots/page2.PNG)
+![****](/Lian_Yu/Screenshots/2100.PNG)
+![****](/Lian_Yu/Screenshots/page2.PNG)
 
 
 ```java
@@ -84,8 +84,8 @@ gobuster dir -u 10.10.204.227/island/2100 -w /usr/share/seclists/Discovery/Web-C
 /green_arrow.ticket   (Status: 200) [Size: 71]
 ```
 
-![****](/Screenshots/ticket)
-![****](/Screenshots/page3.PNG)
+![****](/Lian_Yu/Screenshots/ticket)
+![****](/Lian_Yu/Screenshots/page3.PNG)
 
 ## It seems we got some Credentials here! Let try to open that FTP!
 
@@ -96,7 +96,7 @@ vigilante:!#th3h00d
 
 ### FTP 
 
-![****](/Screenshots/ftp.PNG)
+![****](/Lian_Yu/Screenshots/ftp.PNG)
 
 ```java
 ftp> ls -la 
@@ -118,11 +118,11 @@ drwxr-xr-x    4 0        0            4096 May 01  2020 ..
 - Everything I do after opening an FTP is! ```Downloading everything!```, Everything is valuable!
 
 
-![****](/Screenshots/ls.PNG)
+![****](/Lian_Yu/Screenshots/ls.PNG)
 
 Let try to run ```file``` command on our new discovered files!
 
-![****](/Screenshots/file.PNG)
+![****](/Lian_Yu/Screenshots/file.PNG)
 
 - We noticed that ```aa.jpg``` is hiding something under it!! it's time for some Steganography!
 
@@ -130,13 +130,13 @@ Let try to run ```file``` command on our new discovered files!
 steghide extract -sf ./aa.jpg
 ```
 
-![****](/Screenshots/steg.PNG)
+![****](/Lian_Yu/Screenshots/steg.PNG)
 
 - We need a password to open it! Let check that ```Leave_me_alone.png``` file!
 
 
-![****](/Screenshots/leaveme.PNG)
-![****](/Screenshots/leaveme2.PNG)
+![****](/Lian_Yu/Screenshots/leaveme.PNG)
+![****](/Lian_Yu/Screenshots/leaveme2.PNG)
 
 - This is Intereting! Let dig more!
 
@@ -155,7 +155,7 @@ xxd Leave_me_alone.png
 ```
 
 - Hmmm! a quick search on google ```IEND file format``` the last chunk show us this is a png file. Let try to see the header! 
-![****](/Screenshots/cunk.PNG)
+![****](/Lian_Yu/Screenshots/cunk.PNG)
 
 ```java
 00000000: 5845 6fae 0a0d 1a0a 0000 000d 4948 4452  XEo.........IHDR
@@ -164,15 +164,15 @@ xxd Leave_me_alone.png
 ```
 
 - This is weird!
-![****](/Screenshots/steg.PNG)
+![****](/Lian_Yu/Screenshots/steg.PNG)
 
 - We know PNG file signature starts with ```89 50 4E 47 0D 0A 1A 0A``` thanks to filesignatures.net, now let edit!
 
-![****](/Screenshots/hexeditor.PNG)
+![****](/Lian_Yu/Screenshots/hexeditor.PNG)
 
 - This is better!
 
-![****](/Screenshots/password.PNG)
+![****](/Lian_Yu/Screenshots/password.PNG)
 - We did it boys!
 
 now let try to ```steghide``` with password is ```password```
@@ -181,27 +181,27 @@ steghide extract -sf ./aa.jpg
 Enter passphrase: 
 wrote extracted data to "ss.zip".
 ```
-![****](/Screenshots/ss.PNG)
+![****](/Lian_Yu/Screenshots/ss.PNG)
 
 # It's time for some SSH!
 
 - I've tried with Oliver and vigilente Username! None worked! Then I remembered we downloaded a file from the FTP with the name ```.other_user```.
 
-![****](/Screenshots/names.PNG)
+![****](/Lian_Yu/Screenshots/names.PNG)
 
 - There's a lot of names to try! let see with Slade!
 
-![****](/Screenshots/ssh.PNG)
+![****](/Lian_Yu/Screenshots/ssh.PNG)
 
 - We did it!
 
-![****](/Screenshots/user.PNG)
+![****](/Lian_Yu/Screenshots/user.PNG)
 
 ## Time for some privesc!
 
 - as always! I am ```sudo -l``` fan! with some help of GTFOBins.
 
-![****](/Screenshots/root.PNG)
+![****](/Lian_Yu/Screenshots/root.PNG)
 
 # We did it Amazing Hackers!
 
