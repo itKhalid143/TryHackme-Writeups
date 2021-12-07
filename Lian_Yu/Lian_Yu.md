@@ -118,7 +118,7 @@ drwxr-xr-x    4 0        0            4096 May 01  2020 ..
 - Everything I do after opening an FTP is! ```Downloading everything!```, Everything is valuable!
 
 
-![****](/Lian_Yu/Screenshots/ls.PNG)
+![****](/Lian_Yu/Screenshots/ftpls.PNG)
 
 Let try to run ```file``` command on our new discovered files!
 
