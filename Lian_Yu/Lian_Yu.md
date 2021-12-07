@@ -59,6 +59,7 @@ gobuster dir -u 10.10.166.125 -w /usr/share/seclists/Discovery/Web-Content/direc
 ```
 
 ![****](/Lian_Yu/Screenshots/island.PNG)
+
 ![****](/Lian_Yu/Screenshots/page1.PNG)
 
 - They told us, we need to look for a directory, that has numbers! it's 4 digits numbers! so I did this!
@@ -73,6 +74,7 @@ gobuster dir -u 10.10.166.125/island -w /usr/share/seclists/Fuzzing/4-digits-000
 ```
 
 ![****](/Lian_Yu/Screenshots/2100.PNG)
+
 ![****](/Lian_Yu/Screenshots/page2.PNG)
 
 
@@ -80,16 +82,19 @@ gobuster dir -u 10.10.166.125/island -w /usr/share/seclists/Fuzzing/4-digits-000
 gobuster dir -u 10.10.204.227/island/2100 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o dirbuster-thinrd.txt -x .ticket -q -t 30
 
 ```
+
 ```java
 /green_arrow.ticket   (Status: 200) [Size: 71]
 ```
 
 ![****](/Lian_Yu/Screenshots/ticket.PNG)
+
 ![****](/Lian_Yu/Screenshots/page3.PNG)
 
 ## It seems we got some Credentials here! Let try to open that FTP!
 
 - First I've tried to use the current Password! it didn't work! so I needed to check that hit! and Boom! it's ```Base58``` decoded.
+
 ```java
 vigilante:!#th*****
 ```
@@ -155,6 +160,7 @@ xxd Leave_me_alone.png
 ```
 
 - Hmmm! a quick search on google ```IEND file format``` the last chunk show us this is a png file. Let try to see the header! 
+
 ![****](/Lian_Yu/Screenshots/cunk.PNG)
 
 ```java
@@ -164,6 +170,7 @@ xxd Leave_me_alone.png
 ```
 
 - This is weird!
+
 ![****](/Lian_Yu/Screenshots/steg.PNG)
 
 - We know PNG file signature starts with ```89 50 4E 47 0D 0A 1A 0A``` thanks to filesignatures.net, now let edit!
@@ -173,6 +180,7 @@ xxd Leave_me_alone.png
 - This is better!
 
 ![****](/Lian_Yu/Screenshots/password.PNG)
+
 - We did it boys!
 
 now let try to ```steghide``` with password is ```password```
@@ -181,6 +189,7 @@ steghide extract -sf ./aa.jpg
 Enter passphrase: 
 wrote extracted data to "ss.zip".
 ```
+
 ![****](/Lian_Yu/Screenshots/ss.PNG)
 
 # It's time for some SSH!
