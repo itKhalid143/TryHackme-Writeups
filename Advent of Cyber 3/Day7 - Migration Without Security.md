@@ -11,37 +11,45 @@ What's NoSQL:
 |Rows/Records|Documents|
 |Fields|Columns|
 
-[!****](https://jelvix.com/wp-content/uploads/2020/05/relational-vs-nonrelational.jpg)
+![****](https://jelvix.com/wp-content/uploads/2020/05/relational-vs-nonrelational.jpg)
 
 [MangoDB Operators](https://docs.mongodb.com/manual/reference/operator/query/) Supports BSON and JSON.
 
 ## Mongo Notes:
 
 Creating a database!
+
 	- ```use``` command is used to connect to a database if it exists or create a new one if it doesn't exist.
 
 Create Collections!
+
 	- ```db.createCollection()```
 		- db.createCollection("users")
 		- db.createCollection("roles")
 
 Show Collections!
+
 	- ```db.getCollectionNames();```
 
 Insert into Collections!
+
 	- ```db.getCollectionNames();```
 		- ```db.users.insert({id:"1", username: "admin", email: "admin@thm.labs", password: "idk2021!"})```
 
 Show Available documents within the collection
+
 	- ```db.<COLLECTION>.find()```
 
 Update a Document!
+
 	- ```db.users.update({id:"2"}, {$set: {username: "tryhackme"}});```
 
 Delete a Document!
+
 	- ```db.users.remove({'id':'2'})```
 
 Dropping a Collection!
+
 	- ```db.<COLLECTION>.drop()```
 
 *** 
@@ -57,6 +65,8 @@ Dropping a Collection!
 ```json
 { "_id" : ObjectId("618806af0afbc09bdf42bd6a"), "flag" : "THM{8814a5e6662a97*************}" }
 ```
+
+***
 
 ## Task 2
 
@@ -79,15 +89,19 @@ db.users.findOne({username: "admin", password: {"$ne":"password"}})
 
 ![****](/Advent%20of%20Cyber%203/Screenshots/Task7/5.png)
 
+***
+
 ## Task 3
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task7/6.png)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task7/6.PNG)
 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task7/7.png)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task7/7.PNG)
 
 How it worked!
 - We are telling MongoDB to search for an username doesn't equal the value we give it! and with the role of guest! means it will drop us any user with role is guest! We got the flag!
+
+***
 
 ## Task 4
 
@@ -95,10 +109,10 @@ How it worked!
 
 - I predicted the role of mcskidy! which was correct! ```admin```
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task7/8.png)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task7/8.PNG)
 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task7/9.png)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task7/9.PNG)
 
 Another method!
 ```
