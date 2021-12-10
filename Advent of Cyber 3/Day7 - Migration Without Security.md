@@ -19,38 +19,38 @@ What's NoSQL:
 
 Creating a database!
 
-	- ```use``` command is used to connect to a database if it exists or create a new one if it doesn't exist.
+	- use command is used to connect to a database if it exists or create a new one if it doesn't exist.
 
 Create Collections!
 
-	- ```db.createCollection()```
+	- db.createCollection()
 		- db.createCollection("users")
 		- db.createCollection("roles")
 
 Show Collections!
 
-	- ```db.getCollectionNames();```
+	- db.getCollectionNames();
 
 Insert into Collections!
 
-	- ```db.getCollectionNames();```
-		- ```db.users.insert({id:"1", username: "admin", email: "admin@thm.labs", password: "idk2021!"})```
+	- db.getCollectionNames();
+		- db.users.insert({id:"1", username: "admin", email: "admin@thm.labs", password: "idk2021!"})
 
 Show Available documents within the collection
 
-	- ```db.<COLLECTION>.find()```
+	- db.<COLLECTION>.find()
 
 Update a Document!
 
-	- ```db.users.update({id:"2"}, {$set: {username: "tryhackme"}});```
+	- db.users.update({id:"2"}, {$set: {username: "tryhackme"}});
 
 Delete a Document!
 
-	- ```db.users.remove({'id':'2'})```
+	- db.users.remove({'id':'2'})
 
 Dropping a Collection!
 
-	- ```db.<COLLECTION>.drop()```
+	- db.<COLLECTION>.drop()
 
 *** 
 
