@@ -101,7 +101,7 @@ Let load Offline Hives!
 
 ```.github```
 
-```bag_of_toys.zip```
+```bag_of_toys.zip
 
 ## Task 9
 
