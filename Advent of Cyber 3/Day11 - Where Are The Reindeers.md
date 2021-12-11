@@ -23,11 +23,11 @@ PORT     STATE SERVICE  VERSION
 
 	- sqsh -S <server-IP> -U <username> -P <password>
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task10/sqsh.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task11/sqsh.PNG)
 
 # Task 3 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task10/q3.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task11/q3.PNG)
 
 ```
 1> SELECT * FROM reindeer.dbo.names;
@@ -51,7 +51,7 @@ PORT     STATE SERVICE  VERSION
 # Task 4
 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task10/q4.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task11/q4.PNG)
 
 
 ```
@@ -77,7 +77,7 @@ PORT     STATE SERVICE  VERSION
 
 # Task 5 
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task10/q5.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task11/q5.PNG)
 
 ```
 1> SELECT * FROM reindeer.dbo.presents;
@@ -101,7 +101,7 @@ PORT     STATE SERVICE  VERSION
 
 # Task 6
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task10/q6.PNG)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task11/q6.PNG)
 
 
 ```
