@@ -40,7 +40,7 @@ The results!
 /files                (Status: 301) [Size: 310] [--> http://10.10.60.47/files/]
 ```
 
-![****](/startup/Screenshots/file.PNG)
+![****](/startup/Screenshots/web.PNG)
 
 After checking the website! I instantely released that this web server has a relationship with the FTP! means, let try to upload something in the ftp and see if we got the results in our folder!
 
@@ -74,7 +74,7 @@ That ```incidents``` folder is weird! right? Let check it out!
 
 Let Download the file, open it and try to analyse it!
 
-![****](/startup/Screenshots/download.PNG)
+![****](/startup/Screenshots/pw.PNG)
 
 After analysing, we got a password! Maybe it's ```lennie```'s' password?
 
