@@ -15,14 +15,9 @@ nmap -sV -sC -vv -T4 -oA result 10.10.60.47
 
 
 ```java
-PORT     STATE SERVICE       REASON
-22/tcp   open  ssh           syn-ack
-111/tcp  open  rpcbind       syn-ack
-135/tcp  open  msrpc         syn-ack
-139/tcp  open  netbios-ssn   syn-ack
-445/tcp  open  microsoft-ds  syn-ack
-2049/tcp open  nfs           syn-ack
-3389/tcp open  ms-wbt-server syn-ack
+PORT      STATE    SERVICE REASON      VERSION
+21/tcp    open     ftp     syn-ack     vsftpd 3.0.3
+22/tcp    open     ssh     syn-ack     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
 ```
 
 
