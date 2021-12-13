@@ -47,7 +47,7 @@ net users
 
 ```systeminfo```
 
-![****](/Advent%20of%20Cyber%203/Screenshots/Task13/q1.png)
+![****](/Advent%20of%20Cyber%203/Screenshots/Task13/q2.png)
 
 ## Task 3 & 4
 
