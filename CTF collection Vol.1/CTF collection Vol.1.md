@@ -130,7 +130,7 @@ Listen to it!
 https://soundcloud.com/user-86667759/thm-ctf-vol1
 ```
 
-![****](/CTF%20collection%20Vol.1/Screenshots/q15.png)
+![****](/CTF%20collection%20Vol.1/Screenshots/q17.png)
 
 ## Task 18
 
