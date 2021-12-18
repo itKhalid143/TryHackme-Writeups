@@ -73,13 +73,13 @@ The result
 
 - After logging with the credentials we find! it looks like we can run shell commands!
 
-![****](/The-Cod-Caper/Screenshots/sqlmap.png)
+![****](/The-Cod-Caper/Screenshots/os.png)
 
 Time for some shell!
 
 ![****](/The-Cod-Caper/Screenshots/shell.png)
 
-- Seaching for the last modifier files
+- Seaching for the SSH password!
 
 ```sh
 find / -type f -name *pass* -exec ls -la {} \; 2>/dev/null
